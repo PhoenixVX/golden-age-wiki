@@ -18,12 +18,19 @@
 - [Using metadata to save block IDs]()
 
 ### Save formats
+- [Classic save format]()
+    - Introduced in 
+- [Indev save format]()
+    - Introduced in 
 - ["Alpha" save format]()
+    - Introduced in Infdev 20100327 and discontinued in Beta 1.3
 - [McRegion save format]()
+    - Introduced in Beta 1.3 and discontinued in Release 1.2
 - [Anvil save format]()
+    - Introduced in 12w07a for Release 1.2.1 and is still in use
 
 ### Networking
-- [Packet list]()
+- [Vanilla packets]()
 - [Adding custom packets with MCP]()
 - [Adding custom packets with ModLoader]()
 - [Adding custom packets with Station API]()
