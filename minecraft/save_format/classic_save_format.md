@@ -15,7 +15,7 @@ public boolean load() {
             levelListener.allChanged();
         }
         return true;
-    } catch (final Exception ex) {
+    } catch (Exception ex) {
         ex.printStackTrace();
         return false;
     }
@@ -25,7 +25,7 @@ public boolean load() {
 public void save() {
     try (DataOutputStream stream = new DataOutputStream(new GZIPOutputStream(new FileOutputStream(new File("level.dat"))))) {
         stream.write(this.blocks);
-    } catch (final Exception ex) {
+    } catch (Exception ex) {
         ex.printStackTrace();
     }
 }
