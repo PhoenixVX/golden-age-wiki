@@ -42,7 +42,7 @@ The Golden Age modding wiki is a free and open-source wiki for Minecraft version
 
 ## Contributing
 ### Submitting a pull request
-1. Fork the repository and clone it. `git clone <url>`
+1. Fork the repository and clone it. (`git clone <url>`)
 2. Edit the wiki and add your changes. (`git add .`)
 3. Commit your changes. (`git commit -m "adds X"`)
 4. Push to your fork. (`git push`)
