@@ -44,6 +44,8 @@ Each chunk has a 5 byte header, followed by a compressed compound tag.
     - Responsible for holding pending chunk region updates. Later synchronized to enable multi-threaded region/chunk loading and saving.
 - `RegionFileChunkBuffer.java`
     - Responsible for holding a chunk position and the associated region file instance.
+- `IThreadedFileIO.java`
+- `ThreadedFileIOBase.java`
 - `ThreadedChunkLoader.java`
     - Responsible for loading chunks in McRegion format off-thread, which improves performance when reading/writing regions.
 - `ThreadedChunkLoaderPending.java`
