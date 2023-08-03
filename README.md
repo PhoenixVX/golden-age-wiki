@@ -19,6 +19,11 @@ The Golden Age modding wiki is a free and open-source wiki for Minecraft version
 - [Adding an item with ModLoader]()
 - [Using metadata to save block IDs]()
 
+## Networking
+- [Adding custom packets with MCP]()
+- [Adding custom packets with ModLoaderMP]()
+- [Adding custom packets with Station API]()
+
 ## Documentation
 ### Save formats
 - [Classic save format](minecraft/save_format/classic_save_format.md)
@@ -36,9 +41,6 @@ The Golden Age modding wiki is a free and open-source wiki for Minecraft version
 
 ### Networking
 - [Vanilla packets]()
-- [Adding custom packets with MCP]()
-- [Adding custom packets with ModLoaderMP]()
-- [Adding custom packets with Station API]()
 
 ### Miscellaneous
 - [Blocks and Items](minecraft/blocks_and_items.md)
