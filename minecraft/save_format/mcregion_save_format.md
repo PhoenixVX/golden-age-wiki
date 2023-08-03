@@ -37,7 +37,7 @@ Each chunk has a 5 byte header, followed by a compressed compound tag.
 - `SaveConverterMcRegion.java`
     - Responsible for converting [Alpha](alpha_save_format.md) format to McRegion.
 - `SaveOldDir.java`
-    - Responsible for creating the McRegion ChunkLoader instance per-dimension.
+    - Responsible for creating the McRegion ChunkLoader instance per-dimension. Also responsible for setting the save file format version (`19132`). On server-side, this class is also responsible for clearing the region cache.
 - `RegionFile.java`
     - Responsible for returning chunk streams inside region files.
 - `RegionFileCache.java`
