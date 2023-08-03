@@ -38,3 +38,17 @@ Each chunk has a 5 byte header, followed by a compressed compound tag.
     - Responsible for converting [Alpha](alpha_save_format.md) format to McRegion.
 - `SaveOldDir.java`
     - Responsible for creating the McRegion ChunkLoader instance per-dimension.
+- `RegionFile.java`
+    - Responsible for returning chunk streams inside region files.
+- `RegionFileCache.java`
+    - Responsible for holding pending chunk region updates. Later synchronized to enable multi-threaded region/chunk loading and saving.
+- `RegionFileChunkBuffer.java`
+    - Responsible for holding a chunk position and the associated region file instance.
+- `ThreadedChunkLoader.java`
+    - Responsible for loading chunks in McRegion format off-thread, which improves performance when reading/writing regions.
+- `ThreadedChunkLoaderPending.java`
+    - Responsible for holding pending chunk region updates by holding the chunk position and the chunk NBT data.
+    
+## External Implementations
+- As said above, Scaevolus' McRegion was the first implementation of the McRegion save format and is available at [MinecraftForum.net](https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/mods-discussion/1346703-mod-mcregion-v5-optimized-saves-1-2_02) for Beta 1.2_02.
+- [RegionTool](../miscellaneous/RegionTool_source.zip), also developed by Scaevolus, was a standalone implementation of the McRegion save format, which was able to convert worlds from the Alpha save format to the McRegion save format and back without a dependency on Minecraft code.
