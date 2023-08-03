@@ -20,10 +20,10 @@ GAMWiki is a free and open source wiki for Minecraft versions rd-132211 to 1.5.2
 - [Using metadata to save block IDs]()
 
 ### Save formats
-- [Classic save format]()
-    - Introduced in rd-132211 and discontinued in [PLACEHOLDER].
+- [Classic save format](minecraft/save_format/classic_save_format.md)
+    - Introduced in rd-132211 and discontinued in Indev 0.31 20100114.
 - [Indev save format](minecraft/save_format/classic_save_format.md)
-    - Introduced in [PLACEHOLDER] and discontinued in [PLACEHOLDER].
+    - Introduced in Indev 0.31 20100122 and discontinued in Infdev 20100325.
 - [Infdev 20100624 save format](minecraft/save_format/624_save_format.md)
     - Introduced in Infdev 20100624 and immediately discontinued due to file size concerns.
 - ["Alpha" save format](minecraft/save_format/alpha_save_format.md)
