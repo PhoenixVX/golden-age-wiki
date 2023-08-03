@@ -42,6 +42,7 @@ The Golden Age modding wiki is a free and open-source wiki for Minecraft version
 
 ### Miscellaneous
 - [Blocks and Items](minecraft/blocks_and_items.md)
+- [NBT Types](minecraft/nbt_types.md)
 
 ## Contributing
 ### Submitting a pull request
