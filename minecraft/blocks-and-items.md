@@ -25,7 +25,7 @@ This is a general reference for block and item IDs in vanilla Minecraft Beta 1.7
 | 19 | Sponge | tile.sponge.name |
 | 20 | Glass | tile.glass.name |
 | 21 | Lapis Ore | tile.oreLapis.name |
-| 22 | Lapis Block tile.|.name blockLapis
+| 22 | Lapis Block | tile.blockLapis.name |
 | 23 | Dispenser | tile.dispenser.name |
 | 24 | Sandstone | tile.sandStone.name |
 | 25 | Note Block | tile.musicBlock.name |
@@ -37,9 +37,9 @@ This is a general reference for block and item IDs in vanilla Minecraft Beta 1.7
 | 31 | Tall Grass | tile.tallgrass.name |
 | 32 | Dead Bush | tile.deadbush.name |
 | 33 | Piston Base | tile.pistonBase.name |
-| 34 | Piston Extension | N/tile.A.name |
+| 34 | Piston Extension | N/A |
 | 35 | Wool | tile.cloth.name |
-| 36 | Moving Piston Block | N/tile.A.name |
+| 36 | Moving Piston Block | N/A |
 | 37 | Dandelion | tile.flower.name |
 | 38 | Rose | tile.rose.name |
 | 39 | Brown Mushroom | tile.mushroom.name |
