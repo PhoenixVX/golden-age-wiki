@@ -41,7 +41,7 @@ The Golden Age modding wiki is a free and open-source wiki for Minecraft version
 - [Adding custom packets with Station API]()
 
 ### Miscellaneous
-- [Blocks and Items](minecraft/blocks-and-items.md)
+- [Blocks and Items](minecraft/blocks_and_items.md)
 
 ## Contributing
 ### Submitting a pull request
