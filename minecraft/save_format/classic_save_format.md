@@ -39,5 +39,13 @@ public void save() {
 ## File Structure
 
 ## File Header
-
-## Chunk Format
+**Classic Format 1** (in order)
+| Property | Type | Example |
+| -------- | ---- | ------- |
+| Name | String | "My World" |
+| Author | String | "Steve" |
+| Created on | Long | 1691099757727 |
+| Width | Short | 256 |
+| Length | Short | 256 |
+| Height | Short | 64 |
+| Blocks | Byte Array | [0, 0, 1, ...] |
