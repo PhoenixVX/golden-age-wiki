@@ -1,7 +1,7 @@
 # Table of Contents
 
 ### Modding environment and API installation
-- [Introduction to APIs]()
+- [Introduction to APIs](minecraft/intro_to_apis.md)
 - [Setting up a MCP modding environment](mcp/setting_up.md)
 - [Setting up a Fabric modding environment](fabric/setting_up.md)
 
@@ -19,9 +19,9 @@
 
 ### Save formats
 - [Classic save format]()
-    - Introduced in 
+    - Introduced in rd-132211 and discontinued in [PLACEHOLDER]
 - [Indev save format]()
-    - Introduced in 
+    - Introduced in [PLACEHOLDER] and discontinued in [PLACEHOLDER]
 - ["Alpha" save format]()
     - Introduced in Infdev 20100327 and discontinued in Beta 1.3
 - [McRegion save format]()

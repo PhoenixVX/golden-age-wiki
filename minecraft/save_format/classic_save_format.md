@@ -1,4 +1,7 @@
-The Classic save format is a simple save format designed by Notch, implemented in Classic c0.0.11a and replaced with Java serialization in Classic [PLACEHOLDER].
+The Classic save format is a simple save format designed by Notch, implemented in Preclassic rd-132211 and replaced with Java serialization in Classic [PLACEHOLDER].
+
+### General
+Before Classic [PLACEHOLDER], the default level width, height, and depth were respectively 256, 256, 64, which would mean the maximum amount of blocks present in a level would be 4,194,304 blocks.
 
 ### Technical details
 In early versions of Minecraft Classic, a save was simply the GZipped output of all block IDs contained within the level, similar to the following:
@@ -30,4 +33,3 @@ public void save() {
     }
 }
 ```
-Additionally, the level width and height were hard-coded to 256 up until Classic [PLACEHOLDER].
