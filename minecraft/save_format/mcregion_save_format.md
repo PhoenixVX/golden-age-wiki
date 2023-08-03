@@ -1,4 +1,4 @@
-# McRegion
+# McRegion Save Format
 McRegion is a save format introduced in Beta 1.3 using code from Scaevolus' original [McRegion](https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/mods-discussion/1346703-mod-mcregion-v5-optimized-saves-1-2_02) mod. This format was later succeeded by the [Anvil](/minecraft/save_format/anvil_save_format.md) save format in 1.2.1.
 
 ## File Structure

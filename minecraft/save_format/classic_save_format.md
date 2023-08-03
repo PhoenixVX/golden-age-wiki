@@ -1,3 +1,5 @@
+# Classic Save Format
+
 The Classic save format is a simple save format designed by Notch, implemented in Preclassic rd-132211 and replaced with Java serialization in Classic [PLACEHOLDER].
 
 ### General
