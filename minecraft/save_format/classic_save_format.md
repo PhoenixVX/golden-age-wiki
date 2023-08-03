@@ -35,3 +35,9 @@ public void save() {
     }
 }
 ```
+
+## File Structure
+
+## File Header
+
+## Chunk Format

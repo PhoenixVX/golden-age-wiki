@@ -21,15 +21,17 @@ GAMWiki is a free and open source wiki for Minecraft versions rd-132211 to 1.5.2
 
 ### Save formats
 - [Classic save format]()
-    - Introduced in rd-132211 and discontinued in [PLACEHOLDER]
+    - Introduced in rd-132211 and discontinued in [PLACEHOLDER].
 - [Indev save format](minecraft/save_format/classic_save_format.md)
-    - Introduced in [PLACEHOLDER] and discontinued in [PLACEHOLDER]
+    - Introduced in [PLACEHOLDER] and discontinued in [PLACEHOLDER].
+- [Infdev 20100624 save format](minecraft/save_format/624_save_format.md)
+    - Introduced in Infdev 20100624 and immediately discontinued due to file size concerns.
 - ["Alpha" save format](minecraft/save_format/alpha_save_format.md)
-    - Introduced in Infdev 20100327 and discontinued in Beta 1.3
+    - Introduced in Infdev 20100327 and discontinued in Beta 1.3.
 - [McRegion save format](minecraft/save_format/mcregion_save_format.md)
-    - Introduced in Beta 1.3 and discontinued in Release 1.2
+    - Introduced in Beta 1.3 and discontinued in Release 1.2.
 - [Anvil save format](minecraft/save_format/anvil_save_format.md)
-    - Introduced in 12w07a for Release 1.2.1 and is still in use
+    - Introduced in 12w07a for Release 1.2.1 and is still in use.
 
 ### Networking
 - [Vanilla packets]()
