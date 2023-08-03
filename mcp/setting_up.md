@@ -24,5 +24,14 @@ As said above, RetroMCP-Java is one such alternative to MCP that helps to enable
 8. If the `decompile` tasks fails, you can fix the issues using Eclipse/Intellij, then run `updatemd5hashes`, which updates the hashes used for reobfuscation (which enables your mod to play nicely with other mods).
 
 ### MCP-LTS (**Deprecated**)
+1. Download the latest version from [GitHub](https://github.com/ModificationStation/1.7.3-LTS) by clicking Code->Download ZIP.
+2. Extract the resulting ZIP file.
+3. Move the folder to a suitable working directory.
+4. Open up Command Prompt / Terminal
+5. Type `setup.bat` on Windows or `setup.sh` if on Mac OS X or Linux.
+6. Accept the prompts that come up.
+7. Select the version you wish to mod.
+8. Type `decompile` and wait for it to complete.
+9. Congratulations!
 
 ### RetroMCP-Python (**Deprecated**)
