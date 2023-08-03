@@ -18,3 +18,6 @@ Similar to the McRegion save format, Region files are stored within the `region`
 - `RegionFile.java`
 - `RegionFileCache.java`
 - `RegionFileChunkBuffer.java`
+
+## External Implementations
+- [AnvilConverter](../miscellaneous/AnvilConverter.zip) was a tool created to convert McRegion format worlds to the new Anvil format. Designed by Mojang, it contains original, deobfuscated code which shows how Anvil is implemented from a standalone point-of-view.
