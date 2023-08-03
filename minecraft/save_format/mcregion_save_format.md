@@ -30,3 +30,11 @@ Each chunk has a 5 byte header, followed by a compressed compound tag.
 | `HeightMap`| Byte Array | Stores the top block height of each block.
 | `Entities` | List | A list containing compound tags of mobs/entities in the chunk.
 | `TileEntities` | List | Same as above but with [block entities]().
+
+## Relevant Classes
+- `McRegionChunkLoader.java`
+    - Responsible for loading chunks in the McRegion chunk format.
+- `SaveConverterMcRegion.java`
+    - Responsible for converting [Alpha](alpha_save_format.md) format to McRegion.
+- `SaveOldDir.java`
+    - Responsible for creating the McRegion ChunkLoader instance per-dimension.

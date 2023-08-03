@@ -7,3 +7,7 @@ Similar to the McRegion save format, Region files are stored within the `region`
 ## File Header
 
 ## Chunk Format
+
+## Relevant Classes
+- `AnvilChunkLoader.java`
+    - Responsible for loading chunks in the Anvil format.
