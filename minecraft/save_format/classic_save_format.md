@@ -1,6 +1,6 @@
 # Classic Save Format
 
-The Classic save format is a simple save format designed by Notch, implemented in Preclassic rd-132211 and replaced with Java serialization in Classic [PLACEHOLDER].
+The Classic save format is a simple save format designed by Notch, implemented in Pre-Classic rd-132211 and replaced with Java serialization in Classic [PLACEHOLDER].
 
 ### General
 Before Classic [PLACEHOLDER], the default level width, height, and depth were respectively 256, 256, 64, which would mean the maximum amount of blocks present in a level would be 4,194,304 blocks.
@@ -44,7 +44,7 @@ public void save() {
 | -------- | ---- | ------- |
 | Name | String | "My World" |
 | Author | String | "Steve" |
-| Created on | Long | 1691099757727 |
+| Created On | Long | 1691099757727 |
 | Width | Short | 256 |
 | Length | Short | 256 |
 | Height | Short | 64 |
