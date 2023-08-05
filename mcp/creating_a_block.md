@@ -11,7 +11,7 @@ This guide will explain how to make a simple flower block and making it generate
 public class BlockWitherRose extends BlockFlower {
     public BlockWitherRose(int id, int textureIndex) {
         super(id, textureIndex);
-}
+    }
 
     @Override
     public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity) {
