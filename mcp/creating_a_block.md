@@ -11,7 +11,7 @@ This guide will explain how to make a simple flower block and making it generate
 public class BlockWitherRose extends BlockFlower {
     public BlockWitherRose(int id, int textureIndex) {
         super(id, textureIndex);
-	}
+}
 
     @Override
     public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity) {
@@ -52,61 +52,55 @@ if (this.rand.nextInt(4) == 0) {
 6. When you recompile and start the game, you should notice your flower generating in the world.
 
 ## Builder Methods
-<details>
-    <summary>This is a list of methods you can use when creating your block in order to customize its properties.</summary>
-
-    - `disableNeighborNotifyOnMetadataChange`
-    - `setStepSound`
-    - `setLightOpacity`
-    - `setLightValue`
-    - `setResistance`
-    - `setHardness`
-    - `setBlockUnbreakable`
-    - `setTickOnLoad`
-    - `setBlockBounds`
-    - `setBlockName`
-    - `disableStats`
-</details>
+This is a list of methods you can use when creating your block in order to customize its properties.
+- `disableNeighborNotifyOnMetadataChange`
+- `setStepSound`
+- `setLightOpacity`
+- `setLightValue`
+- `setResistance`
+- `setHardness`
+- `setBlockUnbreakable`
+- `setTickOnLoad`
+- `setBlockBounds`
+- `setBlockName`
+- `disableStats`
 
 ## Overrideable Methods
-<details>
-    <summary>This is a list of methods that you can optionally override in your block class to give your block more functionality.</summary>
- 
-    - `initializeBlock` - Anything you need to do after all the blocks have been registered can go here.
-    - `renderAsNormalBlock`
-    - `getRenderType` - This method makes your block render differently. See [Render Types](minecraft/render_types.md).
-    - `shouldSideBeRendered`
-    - `getIsBlockSolid`
-    - `getBlockTexture`
-    - `getBlockTextureFromSideAndMetadata`
-    - `getBlockTextureFromSide`
-    - `getCollidingBoundingBoxes`
-    - `getSelectedBoundingBoxFromPool`
-    - `isOpaqueCube`
-    - `updateTick`
-    - `randomDisplayTick`
-    - `onBlockDestroyedByPlayer`
-    - `onNeighborBlockChange`
-    - `tickRate`
-    - `onBlockAdded`
-    - `onBlockRemoval`
-    - `quantityDropped`
-    - `idDropped`
-    - `damageDropped`
-    - `onBlockDestroyedByExplosion`
-    - `getRenderBlockPass`
-    - `canPlaceBlockOnSide`
-    - `canPlaceBlockAt`
-    - `blockActivated`
-    - `onEntityWalking`
-    - `onBlockPlaced`
-    - `onBlockClicked`
-    - `getRenderColor`
-    - `colorMultiplier`
-    - `isPoweringTo`
-    - `canProvidePower`
-    - `onEntityCollidedWithBlock`
-    - `isIndirectlyPoweringTo`
-    - `harvestBlock`
-    - `onBlockPlacedBy`
-</details>
+This is a list of methods that you can optionally override in your block class to give your block more functionality.
+- `initializeBlock` - Anything you need to do after all the blocks have been registered can go here.
+- `renderAsNormalBlock`
+- `getRenderType` - This method makes your block render differently. See [Render Types](minecraft/render_types.md).
+- `shouldSideBeRendered`
+- `getIsBlockSolid`
+- `getBlockTexture`
+- `getBlockTextureFromSideAndMetadata`
+- `getBlockTextureFromSide`
+- `getCollidingBoundingBoxes`
+- `getSelectedBoundingBoxFromPool`
+- `isOpaqueCube`
+- `updateTick`
+- `randomDisplayTick`
+- `onBlockDestroyedByPlayer`
+- `onNeighborBlockChange`
+- `tickRate`
+- `onBlockAdded`
+- `onBlockRemoval`
+- `quantityDropped`
+- `idDropped`
+- `damageDropped`
+- `onBlockDestroyedByExplosion`
+- `getRenderBlockPass`
+- `canPlaceBlockOnSide`
+- `canPlaceBlockAt`
+- `blockActivated`
+- `onEntityWalking`
+- `onBlockPlaced`
+- `onBlockClicked`
+- `getRenderColor`
+- `colorMultiplier`
+- `isPoweringTo`
+- `canProvidePower`
+- `onEntityCollidedWithBlock`
+- `isIndirectlyPoweringTo`
+- `harvestBlock`
+- `onBlockPlacedBy`
