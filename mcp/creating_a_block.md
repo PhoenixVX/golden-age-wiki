@@ -24,7 +24,7 @@ public class BlockWitherRose extends BlockFlower {
 ```
 The `onEntityCollidedWithBlock` will check when an animal/mob touches the block and will damage them by 1 heart.
 
-1. Open the `Block` class and register the block using this code:
+2. Open the `Block` class and register the block using this code:
 ```java
 public static final Block WITHER_ROSE = new BlockWitherRose(BLOCK_ID, TEXTURE_INDEX)
         .setStepSound(soundGrassFootstep)
@@ -32,14 +32,14 @@ public static final Block WITHER_ROSE = new BlockWitherRose(BLOCK_ID, TEXTURE_IN
 ```
 `setStepSound` sets the sound that the block makes to a grass/plant sound, and `setBlockName` will set the translation key to use so the block can have a name.
 
-1. To add a name to your block, edit the `lang/en_US.lang` file to have the following entry: 
+3. To add a name to your block, edit the `lang/en_US.lang` file to have the following entry: 
 ```properties
 tile.wither_rose.name=Wither Rose
 ```
 
-1. Make sure to replace `BLOCK_ID` with the block ID you want to assign the block to. The block ID can be between 1 and 255 and must not be used by any other blocks. `TEXTURE_INDEX` is the texture slot in `terrain.png` where your block texture is located. Note that the top left of the texture atlas is slot 0 and the bottom right is slot 255.
+4. Make sure to replace `BLOCK_ID` with the block ID you want to assign the block to. The block ID can be between 1 and 255 and must not be used by any other blocks. `TEXTURE_INDEX` is the texture slot in `terrain.png` where your block texture is located. Note that the top left of the texture atlas is slot 0 and the bottom right is slot 255.
 
-1. To make your flower generate in the world, open `ChunkProviderGenerate` and search for where `WorldGenFlowers` is used, and add this code after it.
+5. To make your flower generate in the world, open `ChunkProviderGenerate` and search for where `WorldGenFlowers` is used, and add this code after it.
 ```java
 if (this.rand.nextInt(4) == 0) {
     WorldGenFlowers generator = new WorldGenFlowers(Block.WITHER_ROSE.blockID);
@@ -49,7 +49,7 @@ if (this.rand.nextInt(4) == 0) {
 }
 ``` 
 
-1. When you recompile and start the game, you should notice your flower generating in the world.
+6. When you recompile and start the game, you should notice your flower generating in the world.
 
 ## Builder Methods
 <details>
