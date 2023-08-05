@@ -69,7 +69,7 @@ This is a list of methods you can use when creating your block in order to custo
 This is a list of methods that you can optionally override in your block class to give your block more functionality.
 - `initializeBlock` - Anything you need to do after all the blocks have been registered can go here.
 - `renderAsNormalBlock`
-- `getRenderType` - This method makes your block render differently. See [Render Types](minecraft/render_types.md).
+- `getRenderType` - This method makes your block render differently. See [Render Types](/minecraft/render_types.md).
 - `shouldSideBeRendered`
 - `getIsBlockSolid`
 - `getBlockTexture`

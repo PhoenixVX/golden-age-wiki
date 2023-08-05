@@ -1,5 +1,6 @@
 # Render Types
 | ID | Used By |
+| --- | --- |
 | 0 | Default |
 | 1 | Flowers, Sugar Cane, Cobwebs |
 | 2 | Torches |
