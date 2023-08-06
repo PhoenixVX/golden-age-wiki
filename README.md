@@ -40,7 +40,7 @@ The Golden Age modding wiki is a free and open-source wiki for Minecraft version
     - Introduced in 12w07a for Release 1.2.1 and is still in use.
 
 ### Networking
-- [Vanilla packets]()
+- [Vanilla packets](minecraft/networking/vanilla_packets.md)
 
 ### Miscellaneous
 - [Blocks and Items](minecraft/blocks_and_items.md)
