@@ -208,8 +208,8 @@ This is a general reference for block and item IDs in vanilla Minecraft Beta 1.7
 | 98 | Cake | item.cake |
 | 99 | Bed | item.bed |
 | 100 | Redstone Repeater | item.diode |
-| 101 | Map | item.cookie |
-| 102 | Leaves | item.map |
+| 101 | Cookie | item.cookie |
+| 102 | Map | item.map |
 | 103 | Shears | item.shears |
 | 2000 | Music Disc (C418 - 13) | item.record |
 | 2001 | Music Disc (C418 - cat) | item.record |
