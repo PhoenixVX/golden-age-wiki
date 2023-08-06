@@ -9,7 +9,7 @@ The Golden Age modding wiki is a free and open-source wiki for Minecraft version
 
 ### Blocks
 - [Adding a block with MCP](mcp/creating_a_block.md)
-- [Adding a block entity with MCP](mcp/creating_a_block.md)
+- [Adding a block entity with MCP](mcp/creating_a_block_entity.md)
 - [Adding a block with ModLoader]()
     - [Using Forge texture atlases]()
 - [Adding a block with Station API]()

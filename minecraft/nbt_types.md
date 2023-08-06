@@ -1,5 +1,4 @@
 # NBT Types
-
 | Type ID | Type Name | MCP Class Name | Payload Size (Bytes) | Description |
 | ------- | -------- | -------------- | -------------------- | ----------- |
 | 0 | TAG_End | NBTTagEnd | 0 | Signifies the end of a TAG_Compound. It is only ever used inside a TAG_Compound, and is not named despite being in a TAG_Compound. |
