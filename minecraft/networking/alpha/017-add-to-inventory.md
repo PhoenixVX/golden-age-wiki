@@ -1,4 +1,4 @@
-# Chunk
+# Add to Inventory
 | Packet ID | Direction |
 | --- | --- |
-| `0x51` | Both |
+| `0x17` | Both |

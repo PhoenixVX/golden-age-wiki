@@ -1,4 +1,4 @@
-# Chunk
+# Complex Entity
 | Packet ID | Direction |
 | --- | --- |
-| `0x51` | Both |
+| `0x59` | Both |

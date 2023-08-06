@@ -1,4 +1,4 @@
-# Chunk
+# Entity Teleport
 | Packet ID | Direction |
 | --- | --- |
-| `0x51` | Both |
+| `0x34` | Both |
