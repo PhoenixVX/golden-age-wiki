@@ -4,6 +4,6 @@
 # Creating a Block Entity
 A block/tile entity is a type of block that you can use when your block needs to store/save special data beyond the 16 metadata values possible with a normal block. This guide will go over how to make a simple crate storage block.
 
-> You can optionally use [this crate texture](/assets/crate.png) created by Tyy on Modification Station for the tutorial.
+> You can optionally use [this crate texture](/assets/crate.png) created by `Tyy#3885` on Modification Station for the tutorial.
 
 TODO

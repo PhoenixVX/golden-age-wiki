@@ -8,14 +8,14 @@ The Golden Age modding wiki is a free and open-source wiki for Minecraft version
 - [Setting up a Fabric modding environment](fabric/setting_up.md)
 
 ### Blocks
-- [Adding a block with MCP](mcp/creating_a_block.md)
-- [Adding a block entity with MCP](mcp/creating_a_block_entity.md)
+- [Adding a block with MCP](mcp/block/creating_a_block.md)
+- [Adding a block entity with MCP](mcp/block/creating_a_block_entity.md)
 - [Adding a block with ModLoader]()
     - [Using Forge texture atlases]()
 - [Adding a block with Station API]()
 
 ### Items
-- [Adding an item with MCP]()
+- [Adding an item with MCP](mcp/item/creating_an_item.md)
 - [Adding an item with ModLoader]()
 - [Using metadata to save block IDs]()
 

@@ -1,5 +1,5 @@
 > [!NOTE]
-> Before you follow this guide, make sure you have decent knowledge of Java and have already [decompiled Minecraft](setting_up.md). If you are using RetroMCP-Java, you may want to enable "keep resources" in order to get the `terrain.png` texture used for the tutorial.
+> Before you follow this guide, make sure you have decent knowledge of Java and have already [decompiled Minecraft](setting_up.md). If you are using RetroMCP-Java, you may want to enable "keep resources" in order to get the `terrain.png` texture used for this tutorial.
 
 # Creating a Block
 This guide will explain how to make a simple flower block and making it generate in the world.
@@ -39,6 +39,9 @@ tile.wither_rose.name=Wither Rose
 
 4. Make sure to replace `BLOCK_ID` with the block ID you want to assign the block to. The block ID can be between 1 and 255 and must not be used by any other blocks. `TEXTURE_INDEX` is the texture slot in `terrain.png` where your block texture is located. Note that the top left of the texture atlas is slot 0 and the bottom right is slot 255.
 
+> [!NOTE]
+> Make sure to reference the Forge texture atlases page if you are using Forge, which allows one to use a custom texture atlas for their mod.
+
 5. To make your flower generate in the world, open `ChunkProviderGenerate` and search for where `WorldGenFlowers` is used, and add this code after it.
 ```java
 if (this.rand.nextInt(4) == 0) {
@@ -65,7 +68,7 @@ This is a list of methods you can use when creating your block in order to custo
 - `setBlockName`
 - `disableStats`
 
-## Overrideable Methods
+## Overridable Methods
 This is a list of methods that you can optionally override in your block class to give your block more functionality.
 - `initializeBlock` - Anything you need to do after all the blocks have been registered can go here.
 - `renderAsNormalBlock`
