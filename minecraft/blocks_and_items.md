@@ -156,7 +156,7 @@ This is a general reference for block and item IDs in vanilla Minecraft up to Re
 | 151 | Daylight Sensor | tile.daylightDetector | 1.5 (13w01a) |
 | 152 | Block of Redstone | tile.blockRedstone | 1.5 (13w01a) |
 | 153 | Nether Quartz Ore | tile.netherquartz | 1.5 (13w01a) |
-| 154 | Hopper | tile.Hopper | 1.5 (13w01a) |
+| 154 | Hopper | tile.hopper | 1.5 (13w01a) |
 | 155 | Block of Quartz | tile.quartzBlock | 1.5 (13w02a) |
 | 156 | Quartz Stairs | tile.stairsQuartz | 1.5 (13w02a) |
 | 157 | Activator Rail | tile.activatorRail | 1.5 (13w02a) |
@@ -167,116 +167,116 @@ This is a general reference for block and item IDs in vanilla Minecraft up to Re
 > In vanilla, item IDs are always shifted up by 256 when they are registered. (e.g. `20` -> `276`)
 > This way, blocks and items can share the same ID system.
 
-| ID | Item | Translation key |
-| --- | --- | --- |
-| 256 | Iron Shovel | item.shovelIron |
-| 257 | Iron Pickaxe | item.pickaxeIron |
-| 258 | Iron Axe | item.hatchetIron |
-| 259 | Flint and Steel | item.flintAndSteel |
-| 260 | Apple | item.apple |
-| 261 | Bow | item.bow |
-| 262 | Arrow | item.arrow |
-| 263 | Coal | item.coal |
-| 264 | Diamond | item.emerald[^1] |
-| 265 | Iron Ingot | item.ingotIron |
-| 266 | Gold Ingot | item.ingotGold |
-| 267 | Iron Sword | item.swordIron |
-| 268 | Wooden Sword | item.swordWood |
-| 269 | Wooden Shovel | item.shovelWood |
-| 270 | Wooden Pickaxe | item.pickaxeWood |
-| 271 | Wooden Axe | item.hatchetWood |
-| 272 | Stone Sword | item.swordStone |
-| 273 | Stone Shovel | item.shovelStone |
-| 274 | Stone Pickaxe | item.pickaxeStone |
-| 275 | Stone Axe | item.hatchetStone |
-| 276 | Diamond Sword | item.swordDiamond |
-| 277 | Diamond Shovel | item.shovelDiamond |
-| 278 | Diamond Pickaxe | item.pickaxeDiamond |
-| 279 | Diamond Axe | item.hatchetDiamond |
-| 280 | Stick | item.stick |
-| 281 | Bowl | item.bowl |
-| 282 | Mushroom Stew | item.mushroomStew |
-| 283 | Golden Sword | item.swordGold |
-| 284 | Golden Shovel | item.shovelGold |
-| 285 | Golden Pickaxe | item.pickaxeGold |
-| 286 | Golden Axe | item.hatchetGold |
-| 287 | String | item.string |
-| 288 | Feather | item.feather |
-| 289 | Gunpowder | item.sulphur |
-| 290 | Wooden Hoe | item.hoeWood |
-| 291 | Stone Hoe | item.hoeStone |
-| 292 | Iron Hoe | item.hoeIron |
-| 293 | Diamond Hoe | item.hoeDiamond |
-| 294 | Golden Hoe | item.hoeGold |
-| 295 | Seeds | item.seeds |
-| 296 | Wheat | item.wheat |
-| 297 | Bread | item.bread |
-| 298 | Leather Cap | item.helmetCloth |
-| 299 | Leather Tunic | item.chestplateCloth |
-| 300 | Leather Pants | item.leggingsCloth |
-| 301 | Leather Boots | item.bootsCloth |
-| 302 | Chain Helmet | item.helmetChain |
-| 303 | Chain Chestplate | item.chestplateChain |
-| 304 | Chain Leggings | item.leggingsChain |
-| 305 | Chain Boots | item.bootsChain |
-| 306 | Iron Helmet | item.helmetIron |
-| 307 | Iron Chestplate | item.chestplateIron |
-| 308 | Iron Leggings | item.leggingsIron |
-| 309 | Iron Boots | item.bootsIron |
-| 310 | Diamond Helmet | item.helmetDiamond |
-| 311 | Diamond Chestplate | item.chestplateDiamond |
-| 312 | Diamond Leggings | item.leggingsDiamond |
-| 313 | Diamond Boots | item.bootsDiamond |
-| 314 | Golden Helmet | item.helmetGold |
-| 315 | Golden Chestplate | item.chestplateGold |
-| 316 | Golden Leggings | item.leggingsGold |
-| 317 | Golden boots | item.bootsGold |
-| 318 | Flint | item.flint |
-| 319 | Raw Porkchop | item.porkchopRaw |
-| 320 | Cooked Porkchop | item.porkchopCooked |
-| 321 | Painting | item.painting |
-| 322 | Golden Apple | item.appleGold |
-| 323 | Sign | item.sign |
-| 324 | Wooden Door | item.doorWood |
-| 325 | Bucket | item.bucket |
-| 326 | Water Bucket | item.bucketWater |
-| 327 | Lava bucket | item.bucketLava |
-| 328 | Minecart | item.minecart |
-| 329 | Saddle | item.saddle |
-| 330 | Iron Door | item.doorIron |
-| 331 | Redstone | item.redstone |
-| 332 | Snowball | item.snowball |
-| 333 | Boat | item.boat |
-| 334 | Leather | item.leather |
-| 335 | Milk | item.milk |
-| 336 | Brick | item.brick |
-| 337 | Clay | item.clay |
-| 338 | Sugar Canes | item.reeds |
-| 339 | Paper | item.paper |
-| 340 | Book | item.book |
-| 341 | Slimeball | item.slimeball |
-| 342 | Minecart with Chest | item.minecartChest |
-| 343 | Minecart with Furnace | item.minecartFurnace |
-| 344 | Egg | item.egg |
-| 345 | Compass | item.compass |
-| 346 | Fishing Rod | item.fishingRod |
-| 347 | Clock | item.clock |
-| 348 | Glowstone Dust | item.yellowDust |
-| 349 | Raw Fish | item.fishRaw |
-| 350 | Cooked Fish | item.fishCooked |
-| 351 | Dye | item.dyePowder |
-| 352 | Bone | item.bone |
-| 353 | Sugar | item.sugar |
-| 354 | Cake | item.cake |
-| 355 | Bed | item.bed |
-| 356 | Redstone Repeater | item.diode |
-| 357 | Cookie | item.cookie |
-| 358 | Map | item.map |
-| 359 | Shears | item.shears |
-| 2256 | Music Disc (C418 - 13) | item.record |
-| 2257 | Music Disc (C418 - cat) | item.record |
+| ID | Item | Translation key | Introduced in |
+| --- | --- | --- | --- |
+| 256 | Iron Shovel | item.shovelIron | Indev 20091231-2 |
+| 257 | Iron Pickaxe | item.pickaxeIron | Indev 20100110 |
+| 258 | Iron Axe | item.hatchetIron | Indev 20100110 |
+| 259 | Flint and Steel | item.flintAndSteel | Indev 20100110 |
+| 260 | Apple | item.apple | Indev 20091231-2 |
+| 261 | Bow | item.bow | Indev 20100110 |
+| 262 | Arrow | item.arrow | Indev 20100122 |
+| 263 | Coal | item.coal | Indev 20100128 |
+| 264 | Diamond | item.emerald[^1] | Indev 20100128 |
+| 265 | Iron Ingot | item.ingotIron | Indev 20100128 |
+| 266 | Gold Ingot | item.ingotGold | Indev 20100128 |
+| 267 | Iron Sword | item.swordIron | Indev 20091231-2 |
+| 268 | Wooden Sword | item.swordWood | Indev 20100128 |
+| 269 | Wooden Shovel | item.shovelWood | Indev 20100128 |
+| 270 | Wooden Pickaxe | item.pickaxeWood | Indev 20100128 |
+| 271 | Wooden Axe | item.hatchetWood | Indev 20100128 |
+| 272 | Stone Sword | item.swordStone | Indev 20100128 |
+| 273 | Stone Shovel | item.shovelStone | Indev 20100128 |
+| 274 | Stone Pickaxe | item.pickaxeStone | Indev 20100128 |
+| 275 | Stone Axe | item.hatchetStone | Indev 20100128 |
+| 276 | Diamond Sword | item.swordDiamond | Indev 20100128 |
+| 277 | Diamond Shovel | item.shovelDiamond | Indev 20100128 |
+| 278 | Diamond Pickaxe | item.pickaxeDiamond | Indev 20100128 |
+| 279 | Diamond Axe | item.hatchetDiamond | Indev 20100128 |
+| 280 | Stick | item.stick | Indev 20100129 |
+| 281 | Bowl | item.bowl | Indev 20100130 |
+| 282 | Mushroom Stew | item.mushroomStew | Indev 20100130 |
+| 283 | Golden Sword | item.swordGold | Indev 20100130 |
+| 284 | Golden Shovel | item.shovelGold | Indev 20100130 |
+| 285 | Golden Pickaxe | item.pickaxeGold | Indev 20100130 |
+| 286 | Golden Axe | item.hatchetGold | Indev 20100130 |
+| 287 | String | item.string | Indev 20100130 |
+| 288 | Feather | item.feather | Indev 20100130 |
+| 289 | Gunpowder | item.sulphur | Indev 20100130 |
+| 290 | Wooden Hoe | item.hoeWood | Indev 20100206 |
+| 291 | Stone Hoe | item.hoeStone | Indev 20100206 |
+| 292 | Iron Hoe | item.hoeIron | Indev 20100206 |
+| 293 | Diamond Hoe | item.hoeDiamond | Indev 20100206 |
+| 294 | Golden Hoe | item.hoeGold | Indev 20100206 |
+| 295 | Seeds | item.seeds | Indev 20100206 |
+| 296 | Wheat | item.wheat | Indev 20100206 |
+| 297 | Bread | item.bread | Indev 20100206 |
+| 298 | Leather Cap | item.helmetCloth | Indev 20091231-2 |
+| 299 | Leather Tunic | item.chestplateCloth | Indev 20091231-2 |
+| 300 | Leather Pants | item.leggingsCloth | Indev 20091231-2 |
+| 301 | Leather Boots | item.bootsCloth | Indev 20091231-2 |
+| 302 | Chain Helmet | item.helmetChain | Indev 20091231-2 |
+| 303 | Chain Chestplate | item.chestplateChain | Indev 20091231-2 |
+| 304 | Chain Leggings | item.leggingsChain | Indev 20091231-2 |
+| 305 | Chain Boots | item.bootsChain | Indev 20091231-2 |
+| 306 | Iron Helmet | item.helmetIron | Indev 20091231-2 |
+| 307 | Iron Chestplate | item.chestplateIron | Indev 20091231-2 |
+| 308 | Iron Leggings | item.leggingsIron | Indev 20091231-2 |
+| 309 | Iron Boots | item.bootsIron | Indev 20091231-2 |
+| 310 | Diamond Helmet | item.helmetDiamond | Indev 20100212-1 |
+| 311 | Diamond Chestplate | item.chestplateDiamond | Indev 20100212-1 |
+| 312 | Diamond Leggings | item.leggingsDiamond | Indev 20100212-1 |
+| 313 | Diamond Boots | item.bootsDiamond | Indev 20100212-1 |
+| 314 | Golden Helmet | item.helmetGold | Indev 20100212-1 |
+| 315 | Golden Chestplate | item.chestplateGold | Indev 20100212-1 |
+| 316 | Golden Leggings | item.leggingsGold | Indev 20100212-1 |
+| 317 | Golden Boots | item.bootsGold | Indev 20100212-1 |
+| 318 | Flint | item.flint | Indev 20100219 |
+| 319 | Raw Porkchop | item.porkchopRaw | Indev 20100219 |
+| 320 | Cooked Porkchop | item.porkchopCooked | Indev 20100219 |
+| 321 | Painting | item.painting | Indev 20100223 |
+| 322 | Golden Apple | item.appleGold | Infdev 20100227-1 |
+| 323 | Sign | item.sign | Infdev 20100607 |
+| 324 | Wooden Door | item.doorWood | Infdev 20100607 |
+| 325 | Bucket | item.bucket | Infdev 20100615 |
+| 326 | Water Bucket | item.bucketWater | Infdev 20100615 |
+| 327 | Lava Bucket | item.bucketLava | Infdev 20100615 |
+| 328 | Minecart | item.minecart | Infdev 20100618 |
+| 329 | Saddle | item.saddle | Infdev 20100625-2 |
+| 330 | Iron Door | item.doorIron | Alpha v1.0.1 |
+| 331 | Redstone | item.redstone | Alpha v1.0.1 |
+| 332 | Snowball | item.snowball | Alpha v1.0.5 |
+| 333 | Boat | item.boat | Alpha v1.0.6 |
+| 334 | Leather | item.leather | Alpha v1.0.8 |
+| 335 | Milk | item.milk | Alpha v1.0.8 |
+| 336 | Brick | item.brick | Alpha v1.0.11 |
+| 337 | Clay | item.clay | Alpha v1.0.11 |
+| 338 | Sugar Canes | item.reeds | Alpha v1.0.11 |
+| 339 | Paper | item.paper | Alpha v1.0.11 |
+| 340 | Book | item.book | Alpha v1.0.11 |
+| 341 | Slimeball | item.slimeball | Alpha v1.0.11 |
+| 342 | Minecart with Chest | item.minecartChest | Alpha v1.0.14 |
+| 343 | Minecart with Furnace | item.minecartFurnace | Alpha v1.0.14 |
+| 344 | Egg | item.egg | Alpha v1.0.14 |
+| 345 | Compass | item.compass | Alpha v1.1.0 |
+| 346 | Fishing Rod | item.fishingRod | Alpha v1.1.1 |
+| 347 | Clock | item.clock | Alpha v1.2.0 |
+| 348 | Glowstone Dust | item.yellowDust | Alpha v1.2.0 |
+| 349 | Raw Fish | item.fishRaw | Alpha v1.2.0 |
+| 350 | Cooked Fish | item.fishCooked | Alpha v1.2.0 |
+| 351 | Dye | item.dyePowder | Beta 1.2 |
+| 352 | Bone | item.bone | Beta 1.2 |
+| 353 | Sugar | item.sugar | Beta 1.2 |
+| 354 | Cake | item.cake | Beta 1.2 |
+| 355 | Bed | item.bed | Beta 1.3 |
+| 356 | Redstone Repeater | item.diode | Beta 1.3 |
+| 357 | Cookie | item.cookie | Beta 1.4 |
+| 358 | Map | item.map | Beta 1.6 |
+| 359 | Shears | item.shears | Beta 1.7 |
+| 2256 | Music Disc (C418 - 13) | item.record | Alpha v1.0.14 |
+| 2257 | Music Disc (C418 - cat) | item.record | Alpha v1.0.14 |
 
-[^1]: In Release 1.3.1 and onward, item.diamond.
+[^1]: From Release 1.3.1 onward, the translation key for diamonds is `item.diamond`.
 
 ## Removed blocks
 | ID | Block | Introduced in | Removed in |
