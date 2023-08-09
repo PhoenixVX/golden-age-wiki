@@ -44,8 +44,8 @@ This is a general reference for block and item IDs in vanilla Minecraft up to Re
 | 38 | Rose | tile.rose | 0.0.20a |
 | 39 | Brown Mushroom | tile.mushroom | 0.0.20a |
 | 40 | Red Mushroom | tile.mushroom | 0.0.20a |
-| 41 | Gold Block | tile.blockGold | 0.0.20a |
-| 42 | Iron Block | tile.blockIron | 0.26 SURVIVAL TEST |
+| 41 | Block of Gold | tile.blockGold | 0.0.20a |
+| 42 | Block of Iron | tile.blockIron | 0.26 SURVIVAL TEST |
 | 43 | Double Slab | tile.stoneSlab | 0.26 SURVIVAL TEST |
 | 44 | Slab | tile.stoneSlab | 0.26 SURVIVAL TEST |
 | 45 | Bricks | tile.brick | 0.26 SURVIVAL TEST |
@@ -60,7 +60,7 @@ This is a general reference for block and item IDs in vanilla Minecraft up to Re
 | 54 | Chest | tile.chest | Indev 20100124 |
 | 55 | Redstone Dust | tile.redstoneDust | Alpha v1.0.1 |
 | 56 | Diamond Ore | tile.oreDiamond | Indev 20100128 |
-| 57 | Diamond Block | tile.blockDiamond | Indev 20100128 |
+| 57 | Block of Diamond | tile.blockDiamond | Indev 20100128 |
 | 58 | Crafting Table | tile.workbench | Indev 20100130 |
 | 59 | Crops | tile.crops | Indev 20100206 |
 | 60 | Farmland | tile.farmland | Indev 20100206 |
@@ -112,6 +112,55 @@ This is a general reference for block and item IDs in vanilla Minecraft up to Re
 | 107 | Fence Gate | tile.fenceGate | Beta 1.8 |
 | 108 | Brick Stairs | tile.stairsBrick | Beta 1.8 |
 | 109 | Stone Brick Stairs | tile.stairsStoneBrickSmooth | Beta 1.8 |
+| 110 | Mycelium | tile.mycel | 1.0.0 (Beta 1.9 Prerelease) |
+| 111 | Lily Pad | tile.waterlily | 1.0.0 (Beta 1.9 Prerelease) |
+| 112 | Nether Brick | tile.netherBrick | 1.0.0 (Beta 1.9 Prerelease) |
+| 113 | Nether Brick Fence | tile.netherFence | 1.0.0 (Beta 1.9 Prerelease) |
+| 114 | Nether Brick Stairs | tile.stairsNetherBrick | 1.0.0 (Beta 1.9 Prerelease) |
+| 115 | Nether Wart | tile.netherStalk | 1.0.0 (Beta 1.9 Prerelease) |
+| 116 | Enchantment Table | tile.enchantmentTable | 1.0.0 (Beta 1.9 Prerelease 3) |
+| 117 | Brewing Stand | tile.brewingStand | 1.0.0 (Beta 1.9 Prerelease 3) |
+| 118 | Cauldron | tile.cauldron | 1.0.0 (Beta 1.9 Prerelease 3) |
+| 119 | End Portal | N/A | 1.0.0 (Beta 1.9 Prerelease 3) |
+| 120 | End Portal Frame | tile.endPortalFrame | 1.0.0 (Beta 1.9 Prerelease 3) |
+| 121 | End Stone | tile.whiteStone | 1.0.0 (Beta 1.9 Prerelease 4) |
+| 122 | Dragon Egg | tile.dragonEgg | 1.0.0 (Beta 1.9 Prerelease 6) |
+| 123 | Redstone Lamp | tile.redstoneLight | 1.2.1 (12w07a) |
+| 124 | Active Redstone Lamp | tile.redstoneLight | 1.2.1 (12w07a) |
+| 125 | Double Wood Slab | tile.woodSlab | 1.3.1 (12w17a) |
+| 126 | Wood Slab | tile.woodSlab | 1.3.1 (12w17a) |
+| 127 | Cocoa | tile.cocoa | 1.3.1 (12w19a) |
+| 128 | Sandstone Stairs | tile.stairsSandStone | 1.3.1 (12w21a) |
+| 129 | Emerald Ore | tile.oreEmerald | 1.3.1 (12w21a) |
+| 130 | Ender Chest | tile.Ender Chest | 1.3.1 (12w21a) |
+| 131 | Tripwire Hook | tile.tripWireSource | 1.3.1 (12w22a) |
+| 132 | Tripwire | tile.tripWire | 1.3.1 (12w22a) |
+| 133 | Emerald Block | tile.blockEmerald | 1.3.1 (12w22a) |
+| 134 | Spruce Wood Stairs | tile.stairsWoodSpruce | 1.3.1 (12w25a) |
+| 135 | Birch Wood Stairs | tile.stairsWoodBirch | 1.3.1 (12w25a) |
+| 136 | Jungle Wood Stairs | tile.stairsWoodJungle | 1.3.1 (12w25a) |
+| 137 | Command Block | tile.commandBlock | 1.4.2 (12w32a) |
+| 138 | Beacon | tile.beacon | 1.4.2 (12w32a) |
+| 139 | Cobblestone Wall | tile.cobbleWall | 1.4.2 (12w34a) |
+| 140 | Flower Pot | tile.flowerPot | 1.4.2 (12w34a) |
+| 141 | Carrots | tile.carrots | 1.4.2 (12w34a) |
+| 142 | Potatoes | tile.potatoes | 1.4.2 (12w34a) |
+| 143 | Wooden Button | tile.button | 1.4.2 (12w34a) |
+| 144 | Mob Head | tile.skull | 1.4.2 (12w36a) |
+| 145 | Anvil | tile.anvil | 1.4.2 (12w41a) |
+| 146 | Trapped Chest | tile.chestTrap | 1.5 (13w01a) |
+| 147 | Weighted Pressure Plate (Light) | tile.weightedPlate_light | 1.5 (13w01a) |
+| 148 | Weighted Pressure Plate (Heavy) | tile.weightedPlate_heavy | 1.5 (13w01a) |
+| 149 | Redstone Comparator | tile.comparator | 1.5 (13w01a) |
+| 150 | Active Redstone Comparator | tile.comparator | 1.5 (13w01a) |
+| 151 | Daylight Sensor | tile.daylightDetector | 1.5 (13w01a) |
+| 152 | Block of Redstone | tile.blockRedstone | 1.5 (13w01a) |
+| 153 | Nether Quartz Ore | tile.netherquartz | 1.5 (13w01a) |
+| 154 | Hopper | tile.Hopper | 1.5 (13w01a) |
+| 155 | Block of Quartz | tile.quartzBlock | 1.5 (13w02a) |
+| 156 | Quartz Stairs | tile.stairsQuartz | 1.5 (13w02a) |
+| 157 | Activator Rail | tile.activatorRail | 1.5 (13w02a) |
+| 158 | Dropper | tile.dropper | 1.5 (13w03a) |
 
 ## Items
 > [!NOTE]
@@ -128,7 +177,7 @@ This is a general reference for block and item IDs in vanilla Minecraft up to Re
 | 261 | Bow | item.bow |
 | 262 | Arrow | item.arrow |
 | 263 | Coal | item.coal |
-| 264 | Diamond | item.emerald |
+| 264 | Diamond | item.emerald[^1] |
 | 265 | Iron Ingot | item.ingotIron |
 | 266 | Gold Ingot | item.ingotGold |
 | 267 | Iron Sword | item.swordIron |
@@ -226,6 +275,8 @@ This is a general reference for block and item IDs in vanilla Minecraft up to Re
 | 359 | Shears | item.shears |
 | 2256 | Music Disc (C418 - 13) | item.record |
 | 2257 | Music Disc (C418 - cat) | item.record |
+
+[^1]: In Release 1.3.1 and onward, item.diamond.
 
 ## Removed blocks
 | ID | Block | Introduced in | Removed in |
