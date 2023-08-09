@@ -163,9 +163,13 @@ This is a general reference for block and item IDs in vanilla Minecraft up to Re
 | 158 | Dropper | tile.dropper | 1.5 (13w03a) |
 
 ## Items
+
 > [!NOTE]
 > In vanilla, item IDs are always shifted up by 256 when they are registered. (e.g. `20` -> `276`)
 > This way, blocks and items can share the same ID system.
+
+> [!NOTE]
+> Before Indev 20100110, items were referenced by their index in the item texture atlas rather than by IDs.
 
 | ID | Item | Translation key | Introduced in |
 | --- | --- | --- | --- |
@@ -273,10 +277,69 @@ This is a general reference for block and item IDs in vanilla Minecraft up to Re
 | 357 | Cookie | item.cookie | Beta 1.4 |
 | 358 | Map | item.map | Beta 1.6 |
 | 359 | Shears | item.shears | Beta 1.7 |
+| 360 | Melon | item.melon | Beta 1.8 |
+| 361 | Pumpkin Seeds | item.seeds_pumpkin | Beta 1.8 |
+| 362 | Melon Seeds | item.seeds_melon | Beta 1.8 |
+| 363 | Raw Beef | item.beefRaw | Beta 1.8 |
+| 364 | Steak | item.beefCooked | Beta 1.8 |
+| 365 | Raw Chicken | item.chickenRaw | Beta 1.8 |
+| 366 | Cooked Chicken | item.chickenCooked | Beta 1.8 |
+| 367 | Rotten Flesh | item.rottenFlesh | Beta 1.8 |
+| 368 | Ender Pearl | item.enderPearl | Beta 1.8 |
+| 369 | Blaze Rod | item.blazeRot | 1.0.0 (Beta 1.9 Prerelease) |
+| 370 | Ghast Tear | item.ghastTear | 1.0.0 (Beta 1.9 Prerelease) |
+| 371 | Gold Nugget | item.goldNugget | 1.0.0 (Beta 1.9 Prerelease) |
+| 372 | Nether Wart | item.netherStalkSeeds | 1.0.0 (Beta 1.9 Prerelease) |
+| 373 | Potion | item.potion | 1.0.0 (Beta 1.9 Prerelease 2) |
+| 374 | Glass Bottle | item.emptyPotion | 1.0.0 (Beta 1.9 Prerelease 2) |
+| 375 | Spider Eye | item.spiderEye | 1.0.0 (Beta 1.9 Prerelease 2) |
+| 376 | Fermented Spider Eye | item.fermentedSpiderEye | 1.0.0 (Beta 1.9 Prerelease 2) |
+| 377 | Blaze Powder | item.blazePowder | 1.0.0 (Beta 1.9 Prerelease 2) |
+| 378 | Magma Cream | item.magmaCream | 1.0.0 (Beta 1.9 Prerelease 2) |
+| 379 | Brewing Stand | item.brewingStand | 1.0.0 (Beta 1.9 Prerelease 3) |
+| 380 | Cauldron | item.cauldron | 1.0.0 (Beta 1.9 Prerelease 3) |
+| 381 | Eye of Ender | item.eyeOfEnder | 1.0.0 (Beta 1.9 Prerelease 3) |
+| 382 | Glistering Melon | item.speckledMelon | 1.0.0 (Beta 1.9 Prerelease 4) |
+| 383 | Spawn Egg | item.monsterPlacer | 1.1 (11w49a) |
+| 384 | Bottle o' Enchanting | item.expBottle | 1.2.1 (12w04a) |
+| 385 | Fire Charge | item.fireball | 1.2.1 (12w04a) |
+| 386 | Book and Quill | item.writingBook | 1.3.1 (12w17a) |
+| 387 | Written Book | item.writtenBook | 1.3.1 (12w17a) |
+| 388 | Emerald | item.emerald | 1.3.1 (12w21a) |
+| 389 | Item Frame | item.frame | 1.4.2 (12w34a) |
+| 390 | Flower Pot | item.flowerPot | 1.4.2 (12w34a) |
+| 391 | Carrot | item.carrots | 1.4.2 (12w34a) |
+| 392 | Potato | item.potato | 1.4.2 (12w34a) |
+| 393 | Baked Potato | item.potatoBaked | 1.4.2 (12w34a) |
+| 394 | Poisonous Potato | item.potatoPoisonous | 1.4.2 (12w34a) |
+| 395 | Empty Map | item.emptyMap | 1.4.2 (12w34a) |
+| 396 | Golden Carrot | item.carrotGolden | 1.4.2 (12w34a) |
+| 397 | Mob Head | item.skull | 1.4.2 (12w36a) |
+| 398 | Carrot on a Stick | item.carrotOnAStick | 1.4.2 (12w36a) |
+| 399 | Nether Star | item.netherStar | 1.4.2 (12w36a) |
+| 400 | Pumpkin Pie | item.pumpkinPie | 1.4.2 (12w37a) |
+| 401 | Firework Rocket | item.fireworks | 1.4.6 (12w49a) |
+| 402 | Firework Star | item.fireworksCharge | 1.4.6 (12w49a) |
+| 403 | Enchanted Book | item.enchantedBook | 1.4.6 (12w49a) |
+| 404 | Redstone Comparator | item.comparator | 1.5 (13w01a) |
+| 405 | Nether Brick | item.netherbrick | 1.5 (13w01a) |
+| 406 | Nether Quartz | item.netherquartz | 1.5 (13w01a) |
+| 407 | Minecart with TNT | item.minecartTnt | 1.5 (13w02a) |
+| 408 | Minecart with Hopper | item.minecartHopper | 1.5 (13w03a) |
 | 2256 | Music Disc (C418 - 13) | item.record | Alpha v1.0.14 |
 | 2257 | Music Disc (C418 - cat) | item.record | Alpha v1.0.14 |
+| 2258 | Music Disc (C418 - blocks) | item.record | 1.0.0 (Beta 1.9 Prerelease 2) |
+| 2259 | Music Disc (C418 - chirp) | item.record | 1.0.0 (Beta 1.9 Prerelease 2) |
+| 2260 | Music Disc (C418 - far) | item.record | 1.0.0 (Beta 1.9 Prerelease 2) |
+| 2261 | Music Disc (C418 - mall) | item.record | 1.0.0 (Beta 1.9 Prerelease 2) |
+| 2262 | Music Disc (C418 - mellohi) | item.record | 1.0.0 (Beta 1.9 Prerelease 2) |
+| 2263 | Music Disc (C418 - stal) | item.record | 1.0.0 (Beta 1.9 Prerelease 2) |
+| 2264 | Music Disc (C418 - strad) | item.record | 1.0.0 (Beta 1.9 Prerelease 2) |
+| 2265 | Music Disc (C418 - ward) | item.record | 1.0.0 (Beta 1.9 Prerelease 2) |
+| 2266 | Music Disc (C418 - 11) | item.record | 1.0.0 (Beta 1.9 Prerelease 2) |
+| 2267 | Music Disc (C418 - wait) | item.record | 1.4.4 (1.4.3) |
 
-[^1]: From Release 1.3.1 onward, the translation key for diamonds is `item.diamond`.
+[^1]: From 12w21a (Release 1.3) onward, the translation key for diamonds is `item.diamond`.
 
 ## Removed blocks
 | ID | Block | Introduced in | Removed in |
@@ -299,3 +362,12 @@ This is a general reference for block and item IDs in vanilla Minecraft up to Re
 | 52 | Water Spawner | Indev 20100114 | Infdev 20100624 |
 | 53 | Lava Spawner | Indev 20100122 | Infdev 20100624 |
 | 55 | Gear | Indev 20100128 | Alpha v1.0.1 |
+
+## Removed items
+| ID | Item | Introduced in | Removed in |
+| --- | --- | --- | --- |
+| N/A | Studded Helmet | Indev 20091231-2 | Indev 20100110
+| N/A | Studded Chestplate | Indev 20091231-2 | Indev 20100110
+| N/A | Studded Leggings | Indev 20091231-2 | Indev 20100110
+| N/A | Studded Boots | Indev 20091231-2 | Indev 20100110
+| N/A | Quiver | Indev 20091231-2 | Indev 20100110
