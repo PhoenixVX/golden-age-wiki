@@ -40,7 +40,7 @@ To read entity metadata, follow these steps:
                 <tr>
                     <td>16</td>
                     <td>Byte</td>
-                    <td>[Flags](#flags)</td>
+                    <td><a href="#flags">Flags</a></td>
                 </tr>
             </table>
         </td>
@@ -182,13 +182,12 @@ To read entity metadata, follow these steps:
 </table>
 
 > [!NOTE]
-> <sup>1</sup>`1` for blowing up, `-1` otherwise.
-> <sup>2</sup>You can use a `0x10` bit mask for shearedness and `0x0F` for color.
+> <sup>1</sup> `1` for blowing up, `-1` otherwise.
+>
+> <sup>2</sup> You can use a `0x10` bit mask for shearedness and `0x0F` for color.
 
 ### Flags
-All entities extending the `Entity` class must support this bit field at metadata ID 0. In later versions, this is also used for sprinting and eating/drinking.
-
-To get the flag at an ID, you can use `value & mask != 0`.
+All entities extending the `Entity` class must support this bit field at metadata ID 0. In later versions, this is also used for sprinting and eating/drinking. To get the flag at an ID, you can use `value & mask != 0`.
 
 | ID | Bit Mask | Name |
 | --- | --- | --- |
