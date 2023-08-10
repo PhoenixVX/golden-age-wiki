@@ -38,7 +38,7 @@ To read entity metadata, follow these steps:
                     <th>Name</th>
                 </tr>
                 <tr>
-                    <td>16</td>
+                    <td>0</td>
                     <td>Byte</td>
                     <td><a href="#flags">Flags</a></td>
                 </tr>
