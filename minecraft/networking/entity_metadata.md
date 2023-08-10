@@ -29,7 +29,7 @@ To read entity metadata, follow these steps:
         <td>Metadata</td>
     </tr>
     <tr>
-        <td>Entity<sup>[?](#flags)</sup></td>
+        <td>Entity<sup></sup></td>
         <td>
             <table>
                 <tr>
@@ -40,7 +40,7 @@ To read entity metadata, follow these steps:
                 <tr>
                     <td>16</td>
                     <td>Byte</td>
-                    <td>Sneaking?</td>
+                    <td>[Flags](#flags)</td>
                 </tr>
             </table>
         </td>
@@ -91,7 +91,7 @@ To read entity metadata, follow these steps:
                 <tr>
                     <td>16</td>
                     <td>Byte</td>
-                    <td>Fuse[^2]</td>
+                    <td>Fuse<sup>1</sup></td>
                 </tr>
                 <tr>
                     <td>17</td>
@@ -113,7 +113,7 @@ To read entity metadata, follow these steps:
                 <tr>
                     <td>16</td>
                     <td>Byte</td>
-                    <td>Sheared? / Color[^1]</td>
+                    <td>Sheared? / Color<sup>2</sup></td>
                 </tr>
             </table>
         </td>
@@ -181,6 +181,10 @@ To read entity metadata, follow these steps:
     </tr>
 </table>
 
+> [!NOTE]
+> <sup>1</sup>`1` for blowing up, `-1` otherwise.
+> <sup>2</sup>You can use a `0x10` bit mask for shearedness and `0x0F` for color.
+
 ### Flags
 All entities extending the `Entity` class must support this bit field at metadata ID 0. In later versions, this is also used for sprinting and eating/drinking.
 
@@ -199,9 +203,3 @@ To get the flag at an ID, you can use `value & mask != 0`.
     - Represents a metadata value that can be changed.
 - `Packet40EntityMetadata.java`
     - The packet that notifies the client of metadata changes in a mob.
-
-<hr>
-
-[^1]: You can use a `0x10` bit mask for shearedness and `0x0F` for color.
-
-[^2]: `1` for blowing up, `-1` otherwise.
