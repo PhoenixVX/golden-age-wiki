@@ -2,7 +2,6 @@
 > Before you follow this guide, make sure you have decent knowledge of Java and have already [decompiled Minecraft](setting_up.md). If you are using RetroMCP-Java, you may want to enable "keep resources" in order to get the `gui/items.png` texture used for this tutorial.
 
 # Creating a Custom Item
-This guide will explain how to make a simple
 
 ## Builder Methods
 This is a list of methods you can use when creating your item in order to customize its properties.

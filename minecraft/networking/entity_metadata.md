@@ -28,6 +28,7 @@ To read entity metadata, follow these steps:
         <th>Name</th>
         <td>Metadata</td>
     </tr>
+    <tr>
         <td>Entity<sup>[?](#flags)</sup></td>
         <td>
             <table>
@@ -45,9 +46,6 @@ To read entity metadata, follow these steps:
         </td>
     </tr>
     <tr>
-        <th>Name</th>
-        <td>Metadata</td>
-    </tr>
         <td>Player</td>
         <td>
             <table>
