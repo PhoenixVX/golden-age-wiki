@@ -68,6 +68,9 @@
 <details>
 <summary>Collapsible section</summary>
 
+| Packet ID | Packet |
+| --- | --- |
+| `0x28` | [ENTITY_METADATA](beta/040-entity-metadata.md) |
 </details>
 
 ## Release
