@@ -13,23 +13,23 @@ Each chunk has a 5 byte header, followed by a compressed compound tag.
 **Header** (in order)
 | Type | Size | Description |
 | --- | --- | --- |
-| Integer | 4 | The length of the compressed chunk data in bytes.|
+| Integer | 4 | The length of the compressed chunk data in bytes. |
 | Byte | 1 | The compression type of the chunk. `1` for gzip and `2` for deflate. |
 
 **Data**
 | Name | Type | Description |
 | --- | --- | --- |
-| `xPos` | Integer | The X position of the chunk.
-| `zPos` | Integer | The Z position of the chunk.
-| `LastUpdate` | Long | The in-game time when the chunk was updated last.
-| `Blocks` | Byte Array | Stores a byte indicating the block ID.
-| `Data` | Nibble Array | Stores the metadata value of the block, sometimes used for direction/block variants.
-| `SkyLight` | Nibble Array | Stores the sun light propagation of each block.
-| `BlockLight` | Nibble Array | Stores the light value of each block.
-| `TerrainPopulated` | Byte | Whether any features have been generated yet.
-| `HeightMap`| Byte Array | Stores the top block height of each block.
-| `Entities` | List | A list containing compound tags of mobs/entities in the chunk.
-| `TileEntities` | List | Same as above but with [block entities]().
+| `xPos` | Integer | The X position of the chunk. |
+| `zPos` | Integer | The Z position of the chunk. |
+| `LastUpdate` | Long | The in-game time when the chunk was updated last. |
+| `Blocks` | Byte Array | Stores a byte indicating the block ID. |
+| `Data` | Nibble Array | Stores the metadata value of the block, sometimes used for direction/block variants. |
+| `SkyLight` | Nibble Array | Stores the sun light propagation of each block. |
+| `BlockLight` | Nibble Array | Stores the light value of each block. |
+| `TerrainPopulated` | Byte | Whether any features have been generated yet. |
+| `HeightMap`| Byte Array | Stores the top block height of each block. |
+| `Entities` | List | A list containing compound tags of mobs/entities in the chunk. |
+| `TileEntities` | List | Same as above but with [block entities](). |
 
 ## Relevant Classes
 - `McRegionChunkLoader.java`
