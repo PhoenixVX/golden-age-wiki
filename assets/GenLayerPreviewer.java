@@ -88,7 +88,7 @@ public class GenLayerPreviewer {
 		addGenLayer(g -> new GenLayerZoom(1000L, g));
 		addGenLayer(g -> new GenLayerZoom(1001L, g));
 
-		for (int i = 0; i < 4; i++) {
+		for (int i = 0; i < biomeScale; i++) {
 			final long li = i;
 			addGenLayer(g -> new GenLayerZoom(1000L + li, g));
 			if (i == 0) {
