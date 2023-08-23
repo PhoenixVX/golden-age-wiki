@@ -2,7 +2,7 @@
 
 # GenLayerVoronoiZoom *(b1.8-1.1: GenLayerZoomVoronoi)*
 
-`GenLayerVoronoiZoom` zooms in the map with voronoi interpolation.
+`GenLayerVoronoiZoom` zooms in the map to quadruple scale to with voronoi interpolation.
 
 ## Pseudocode
 ```lua

@@ -4,7 +4,7 @@
 
 ## Pseudocode
 ```lua
-downfall = downfall + (floor(biome.downfall * 65536) - downfall) / (zoomLevel * 2 + 1)
+downfall = downfall + (floor(biome.downfall * 65536) - downfall) / (zoomLevel + 1)
 ```
 
 ## Example

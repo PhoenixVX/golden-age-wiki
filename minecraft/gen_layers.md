@@ -6,8 +6,13 @@ Versions Beta 1.8 and later use a system of world generation using GenLayers. *(
 3. *(b1.8-1.1 Temperature)*
 4. *(b1.8-1.1 Rainfall)*
 
-## List
+## Sequences
+- [Beta 1.8](genlayer/sequence/b18.md)
+- [Beta 1.9 Prerelease - 1.0.0](genlayer/sequence/r100.md)
+- [1.1](genlayer/sequence/r11.md)
+- [1.2 - 1.6.4](genlayer/sequence/r12.md)
 
+## List
 - [GenLayerAddIsland](genlayer/addisland.md)
 - [GenLayerAddIsland (Beta 1.8)](genlayer/addisland-b18.md)
 - [GenLayerAddMushroomIsland](genlayer/addmushroomisland.md)
