@@ -9,7 +9,7 @@
 - ![6](/assets/biome/6.png) Swampland
 - ![1](/assets/biome/1.png) Plains
 - ![5](/assets/biome/5.png) Taiga
-- ![21](/assets/biome/21.png) *(1.2/12w01a+ Jungle)*
+- ![21](/assets/biome/21.png) *(1.2/12w03a+ Jungle)*
 
 ## Pseudocode
 ### Beta 1.8
@@ -59,7 +59,7 @@ Z: 0<br>
 |![0](/assets/biome/0.png)|![0](/assets/biome/0.png)|![3](/assets/biome/3.png)|![5](/assets/biome/5.png)|![3](/assets/biome/3.png)|![2](/assets/biome/2.png)|![6](/assets/biome/6.png)|![5](/assets/biome/5.png)|
 |![14](/assets/biome/14.png)|![0](/assets/biome/0.png)|![0](/assets/biome/0.png)|![1](/assets/biome/1.png)|![2](/assets/biome/2.png)|![1](/assets/biome/1.png)|![3](/assets/biome/3.png)|![5](/assets/biome/5.png)|
 
-### Output *(1.2/12w01a+)*
+### Output *(1.2/12w03a+)*
 |  |  |  |  |  |  |  |  |
 |--|--|--|--|--|--|--|--|
 |![1](/assets/biome/1.png)|![5](/assets/biome/5.png)|![4](/assets/biome/4.png)|![21](/assets/biome/21.png)|![12](/assets/biome/12.png)|![12](/assets/biome/12.png)|![12](/assets/biome/12.png)|![12](/assets/biome/12.png)|

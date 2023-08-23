@@ -1,6 +1,6 @@
-# GenLayerSwampRivers
+# GenLayerSwampRivers *(1.1+)*
 
-`GenLayerSwampRivers` adds spots of rivers to swamplands and jungles. 1 in 6 swampland spaces *(1.2/12w01a+ and 1 in 8 jungle or jungle hills)* spaces are replaced
+`GenLayerSwampRivers` adds spots of rivers to swamplands and jungles. 1 in 6 swampland spaces *(1.2+ and 1 in 8 jungle or jungle hills)* spaces are replaced
 
 ## Pseudocode
 ```lua

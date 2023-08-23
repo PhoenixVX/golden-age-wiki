@@ -10,7 +10,7 @@ hills = {
     Biome.TAIGA: Biome.TAIGA_HILLS,
     Biome.PLAINS: Biome.FOREST,
     Biome.ICE_PLAINS: Biome.ICE_MOUNTAINS,
-    Biome.JUNGLE: Biome.JUNGLE_HILLS -- (1.2/12w01a+)
+    Biome.JUNGLE: Biome.JUNGLE_HILLS -- (1.2/12w03a+)
 }
 
 if input.neighbors(x, z).allEqual(biome) and randbool(3) and biome in hills {

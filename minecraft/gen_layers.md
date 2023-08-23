@@ -9,6 +9,7 @@ Versions Beta 1.8 and later use a system of world generation using GenLayers. *(
 ## List
 
 - [GenLayerAddIsland](genlayer/addisland.md)
+- [GenLayerAddIsland (Beta 1.8)](genlayer/addisland-b18.md)
 - [GenLayerAddMushroomIsland](genlayer/addmushroomisland.md)
 - [GenLayerAddSnow](genlayer/addsnow.md)
 - [GenLayerBiome](genlayer/biome.md)

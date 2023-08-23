@@ -1,10 +1,12 @@
 # GenLayerAddIsland *(b1.8-1.1: GenLayerIsland)*
 
-`GenLayerAddIsland` adds and removes land from existing islands. In spaces of land surrounded by ocean, it has a 1 in 5 chance of becoming ocean *(b1.9-pre+ or a frozen ocean if it used to be an ice plains)*. In spaces of ocean with a neighboring piece of land, it has a 1 in 3 chance of becoming land *(b1.9-pre+ and a chance of copying ice plains from a neighbor)*.
+`GenLayerAddIsland` adds and removes land from existing islands. In spaces of land with all of its diagonal neighbors being oceans, it has a 1 in 5 chance of becoming ocean or a frozen ocean if it used to be an ice plains. In spaces of ocean with a diagonally neighboring piece of land, it has a 1 in 3 chance of becoming land and a chance of copying ice plains from a neighbor.
+
+`GenLayerAddIsland` behaves differently in [Beta 1.8](/minecraft/genlayer/addisland-b18.md).
 
 ## Pseudocode
 ```lua
-neighbors = input.neighbors(x, z)
+neighbors = input.diagonalNeighbors(x, z)
 
 if biome != Biome.OCEAN or neighbors.allEqual(Biome.OCEAN) {
     if biome != Biome.OCEAN and Biome.OCEAN in neigbors {
