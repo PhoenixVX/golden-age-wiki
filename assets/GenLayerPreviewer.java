@@ -146,7 +146,7 @@ public class GenLayerPreviewer {
 
 		for (int z = 0; z < height; z++) {
 			for (int x = 0; x < width; x++) {
-				int i = array[x + z * height];
+				int i = array[x + z * width];
 				System.out.printf("|%-2d", i);
 			}
 			System.out.println("|");
@@ -166,7 +166,7 @@ public class GenLayerPreviewer {
 
 		for (int z = 0; z < height; z++) {
 			for (int x = 0; x < width; x++) {
-				int i = array[x + z * height];
+				int i = array[x + z * width];
 				System.out.print("|![" + i + "](/assets/biome/" + i + ".png)");
 			}
 			System.out.println("|");
@@ -207,7 +207,7 @@ public class GenLayerPreviewer {
 				gfx.setColor(new Color(color[0], color[1], color[2]));
 				gfx.fillRect(x * scale, z * scale, scale, scale);
 
-				String text = String.valueOf(array[x + z * height]);
+				String text = String.valueOf(array[x + z * width]);
 				GlyphVector glyphVector = gfx.getFont().createGlyphVector(gfx.getFontRenderContext(), text);
 				Shape textShape = glyphVector.getOutline();
 
@@ -227,11 +227,10 @@ public class GenLayerPreviewer {
 	private static void printImage(int[] array, int width, int height) {
 		BufferedImage img = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
 
-
 		for (int x = 0; x < width; x++) {
 			for (int z = 0; z < height; z++) {
 				int color = 0;
-				int i = array[x + z * height];
+				int i = array[x + z * width];
 				if (i >= 0 && i < BiomeGenBase.biomeList.length) {
 					BiomeGenBase biome = BiomeGenBase.biomeList[i];
 					if (biome != null) {
@@ -267,7 +266,7 @@ public class GenLayerPreviewer {
 			for (int xx = 0; xx < width; xx++) {
 				for (int zz = 0; zz < height; zz++) {
 					int color = 0;
-					int i = array[xx + zz * height];
+					int i = array[xx + zz * width];
 					if (i >= 0 && i < BiomeGenBase.biomeList.length) {
 						BiomeGenBase biome = BiomeGenBase.biomeList[i];
 						if (biome != null) {
