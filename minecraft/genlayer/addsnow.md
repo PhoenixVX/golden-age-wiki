@@ -1,4 +1,4 @@
-# GenLayerAddSnow *(b1.9-pre+)*
+# GenLayerAddSnow *(b1.9-pre+)* *(b1.9-pre-1.1: GenLayerSnow)*
 
 `GenLayerAddSnow` turns 1 in 5 land biomes into ice plains.
 

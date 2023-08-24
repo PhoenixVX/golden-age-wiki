@@ -83,7 +83,7 @@ public class GenLayerPreviewer {
 		river = new GenLayerRiver(1L, river);
 		river = new GenLayerSmooth(1000L, river);
 
-		addGenLayer(g -> new GenLayerBiome(1000L, g, WorldType.DEFAULT));
+		addGenLayer(g -> new GenLayerBiome(200L, g, WorldType.DEFAULT));
 		addGenLayer(g -> new GenLayerHills(1000L, g));
 		addGenLayer(g -> new GenLayerZoom(1000L, g));
 		addGenLayer(g -> new GenLayerZoom(1001L, g));
