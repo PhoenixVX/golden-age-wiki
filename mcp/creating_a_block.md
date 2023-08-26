@@ -4,7 +4,7 @@
 # Creating a Block
 This guide will explain how to make a simple flower block and making it generate in the world.
 
-> You can optionally use [this flower texture](/assets/wither_rose.png) created by Tyy on Modification Station for the tutorial.
+> You can optionally use [this flower texture](/assets/blocks/wither_rose.png) created by Tyy on Modification Station for the tutorial.
 
 1. Open your IDE of choice and create a new class extending named `BlockWitherRose` with this code:
 ```java
