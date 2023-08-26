@@ -1,4 +1,4 @@
-# GenLayerTemperatureMix *(b1.8-1.1)*
+# GenLayerTemperatureMix *(b1.8-r1.1)*
 
 `GenLayerTemperatureMix` blends the smoothly zoomed temperature values with the current biome temperature values using linear interpolation with varying strengths over different zoom levels.
 

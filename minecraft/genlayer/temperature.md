@@ -1,4 +1,4 @@
-# GenLayerTemperature *(b1.8-1.1)*
+# GenLayerTemperature *(b1.8-r1.1)*
 
 `GenLayerTemperature` copies the temperatures of biomes and puts them in a range between 0 and 65536.
 

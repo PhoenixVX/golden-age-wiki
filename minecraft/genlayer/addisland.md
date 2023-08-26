@@ -1,4 +1,4 @@
-# GenLayerAddIsland *(b1.8-1.1: GenLayerIsland)*
+# GenLayerAddIsland *(b1.8-r1.1: GenLayerIsland)*
 
 `GenLayerAddIsland` adds and removes land from existing islands. In spaces of land with all of its diagonal neighbors being oceans, it has a 1 in 5 chance of becoming ocean or a frozen ocean if it used to be an ice plains. In spaces of ocean with a diagonally neighboring piece of land, it has a 1 in 3 chance of becoming land and a chance of copying ice plains from a neighbor.
 

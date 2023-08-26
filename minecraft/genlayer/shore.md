@@ -1,6 +1,6 @@
 # GenLayerShore *(b1.9-pre+)*
 
-`GenLayerShore` adds shore, *(1.1/12w01a+ beach and edge)* biomes to the world. Mushroom islands are surrounded by mushroom island shore instead of ocean, *(1.1/12w01a+ extreme hills are surrounded by extreme hills edge and any other biome with a neighboring ocean that is not an ocean, river or swampland is turned into a beach)*.
+`GenLayerShore` adds shore, *(r1.1/12w01a+ beach and edge)* biomes to the world. Mushroom islands are surrounded by mushroom island shore instead of ocean, *(r1.1/12w01a+ extreme hills are surrounded by extreme hills edge and any other biome with a neighboring ocean that is not an ocean, river or swampland is turned into a beach)*.
 
 ## Pseudocode
 ```lua

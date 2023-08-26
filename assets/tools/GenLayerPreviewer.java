@@ -22,6 +22,8 @@ import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
 public class GenLayerPreviewer {
+    // GenLayerPreviewer created by BlueStaggo 2023
+
 	// Note: For GenLayerPreviewer to work properly, add "public final long seed"
 	// to GenLayer's fields and "this.seed = var1" to GenLayer's constructor.
 

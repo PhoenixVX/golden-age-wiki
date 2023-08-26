@@ -1,6 +1,6 @@
 <!-- TODO: What kind of demon is Notch summoning in the code of GenLayerVoronoiZoom? -->
 
-# GenLayerVoronoiZoom *(b1.8-1.1: GenLayerZoomVoronoi)*
+# GenLayerVoronoiZoom *(b1.8-r1.1: GenLayerZoomVoronoi)*
 
 `GenLayerVoronoiZoom` zooms in the map to quadruple scale to with voronoi interpolation.
 

@@ -1,4 +1,4 @@
-# GenLayerDownfall *(b1.8-1.1)*
+# GenLayerDownfall *(b1.8-r1.1)*
 
 `GenLayerDownfall` copies the downfalls of biomes and puts them in a range between 0 and 65536.
 

@@ -1,4 +1,4 @@
-# GenLayerFuzzyZoom *(b1.8-1.1: GenLayerZoomFuzzy)*
+# GenLayerFuzzyZoom *(b1.8-r1.1: GenLayerZoomFuzzy)*
 
 `GenLayerFuzzyZoom` doubles the size of the map with a fuzzy scaling algorithm. This algorithm randomly picks between neighbors from the input map at half size. 
 

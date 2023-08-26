@@ -1,4 +1,4 @@
-# GenLayerSmoothZoom *(b1.8-1.1)*
+# GenLayerSmoothZoom *(b1.8-r1.1)*
 
 `GenLayerSmoothZoom` doubles the size of the map using bilinear interpolation with random points.
 

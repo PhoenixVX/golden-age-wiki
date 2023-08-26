@@ -1,4 +1,4 @@
-# GenLayerDownfallMix *(b1.8-1.1)*
+# GenLayerDownfallMix *(b1.8-r1.1)*
 
 `GenLayerDownfallMix` blends the smoothly zoomed downfall values with the current biome downfall values using linear interpolation with varying strengths over different zoom levels.
 

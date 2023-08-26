@@ -1,6 +1,6 @@
-# GenLayerIsland *(b1.8-1.1: LayerIsland)*
+# GenLayerIsland *(b1.8-r1.1: LayerIsland)*
 
-`GenLayerIsland` is the first GenLayer called in world generation. Unlike other GenLayers, `GenLayerIsland` does not take in any inputs. It returns a zoomed out map of biomes where 1 in 10 biomes are plains and the rest are ocean. In addition to this, the biome at (0, 0) is always a plains biome.
+`GenLayerIsland` is the first GenLayer called in world generation. Unlike other generation layers, `GenLayerIsland` does not take in any inputs. It returns a zoomed out map of biomes where 1 in 10 biomes are plains and the rest are ocean. In addition to this, the biome at (0, 0) is always a plains biome.
 
 ## Pseudocode
 ```lua
