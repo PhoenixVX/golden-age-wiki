@@ -8,7 +8,7 @@
 | 4 | Liquids |
 | 5 | Redstone Dust |
 | 6 | Wheat |
-| 7 | Doors | 
+| 7 | Doors |
 | 8 | Ladders |
 | 9 | Rails |
 | 10 | Stairs |
@@ -19,7 +19,7 @@
 | 15 | Redstone Repeater |
 | 16 | Piston Base |
 | 17 | Piston Extension |
-| 18 | Glass Pane | 
+| 18 | Glass Pane |
 | 19 | Melon/Pumpkin Stem |
 | 20 | Vines |
 | 21 | Fence Gate |
@@ -32,14 +32,12 @@
 | 28 | Cocoa Beans |
 | 29 | Tripwire Hook |
 | 30 | Placed String |
-| 31 | Log (r1.3+) | 
+| 31 | Log (r1.3+) |
 | 32 | Wall |
-| 33 | Flower Pot | 
-| 34 | Beacon | 
-| 35 | Anvil | 
+| 33 | Flower Pot |
+| 34 | Beacon |
+| 35 | Anvil |
 | 36 | Redstone Repeater/Comparator base (r1.5+, unused standalone) |
 | 37 | Redstone Comparator |
 | 38 | Hopper |
-| 39 | Quartz Block | 
-| 40 | Double-tall Plant |
-| 41 | Stained Glass Pane | 
+| 39 | Quartz Block |
