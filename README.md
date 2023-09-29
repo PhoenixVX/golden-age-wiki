@@ -2,6 +2,8 @@
 The Golden Age modding wiki is a free and open-source wiki for Minecraft versions from rd-132211 to 1.5.2 that focuses on documenting how Minecraft itself works and best practices for modding such versions.
 
 ## Tutorials
+This wiki recommends that you have a basic understanding of Java before learning to mod Minecraft. If you don't, you can find some free Java resources [here](resources.md).
+
 ### Setting up
 - [Introduction to APIs](minecraft/intro_to_apis.md)
 - [Setting up a MCP modding environment](mcp/setting_up.md)
