@@ -45,6 +45,7 @@ The Golden Age modding wiki is a free and open-source wiki for Minecraft version
 ### Miscellaneous
 - [Blocks and Items](minecraft/blocks_and_items.md)
 - [NBT Types](minecraft/nbt_types.md)
+- [Generation Layers](minecraft/generation_layers.md)
 
 ## Contributing
 ### Submitting a pull request
@@ -57,4 +58,4 @@ The Golden Age modding wiki is a free and open-source wiki for Minecraft version
 <hr>
 
 > [!NOTE]
-> This project is not related or affiliated with r/GoldenAgeMinecraft, Mojang, or Microsoft. Except where otherwise stated, this wiki is provided under the terms of the Creative Commons Zero 1.0 Universal license (CC0). For more information, please see the [license file](./LICENSE).
+> This project is not related or affiliated with r/GoldenAgeMinecraft, Mojang, or Microsoft. Except where otherwise stated, this wiki is provided under the terms of the Creative Commons Zero 1.0 Universal license (CC0). For more information, please see the [license file](https://raw.githubusercontent.com/PhoenixVX/golden-age-wiki/main/LICENSE).

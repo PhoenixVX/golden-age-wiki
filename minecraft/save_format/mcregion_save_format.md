@@ -53,4 +53,4 @@ Each chunk has a 5 byte header, followed by a compressed compound tag.
     
 ## External Implementations
 - As said above, Scaevolus' McRegion was the first implementation of the McRegion save format and is available at [MinecraftForum.net](https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/mods-discussion/1346703-mod-mcregion-v5-optimized-saves-1-2_02) for Beta 1.2_02.
-- [RegionTool](../assets/RegionTool_source.zip), also developed by Scaevolus, was a standalone implementation of the McRegion save format, which was able to convert worlds from the Alpha save format to the McRegion save format and back without a dependency on Minecraft code.
+- [RegionTool](/assets/tools/RegionTool_source.zip), also developed by Scaevolus, was a standalone implementation of the McRegion save format, which was able to convert worlds from the Alpha save format to the McRegion save format and back without a dependency on Minecraft code.
