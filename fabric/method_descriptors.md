@@ -48,7 +48,7 @@ getPlayersAt(III)[Lnet/minecraft/entity/Player;
 
 **Method**
 ```java
-void setWorldInfo(long seed)
+void setWorldInfo(long seed);
 ```
 
 **Descriptor**
