@@ -8,7 +8,6 @@ Setting up a modding environment using MCP can be quite troublesome for a first 
 1. Extract the resulting ZIP file.
 1. Move the resulting folder to a suitable working directory.
 1. If the version you are modding is new enough, you can simply click `decompile.bat` or `decompile.sh` and have a MCP environment setup after a few minutes of decompilation. If this is successful, congratulations, you are now ready to mod!
-1. [PLACEHOLDER]
 
 ### RetroMCP-Java
 As said above, RetroMCP-Java is one such alternative to MCP that helps to enable easy mod development without having to worry about the limitations of original MCP.
