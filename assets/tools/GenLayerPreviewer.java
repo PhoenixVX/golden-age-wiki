@@ -11,12 +11,11 @@ import java.awt.font.GlyphVector;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.*;
 import java.util.List;
-import java.util.Objects;
 import java.util.function.Function;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
@@ -32,9 +31,11 @@ public class GenLayerPreviewer {
 	// - WIKI: Markdown table with images from golden-age-wiki
 	// - ARRAY: Java array
 	// - HEATMAP: Image for values between 0 and 65536 (copied to clipboard)
+	// - HEATMAP_ANNOTATED: Heatmap with numbers on the squares
 	// - IMAGE: Image using biome colors (copied to clipboard)
 	// - IMAGE_SEQUENCE: Sequence of images with information for each GenLayer
 	//                   saved as a GIF if FFmpeg is installed (images saved to .minecraft/genlayertester)
+    private static final Random random = new Random();
 	private static final PrintMode format = PrintMode.IMAGE_SEQUENCE;
 	private static final long seed = "Glacier".hashCode(); // Set seed here
 
@@ -61,51 +62,14 @@ public class GenLayerPreviewer {
 	};
 	private static final GenLayer inputGenLayer = new GenLayerArray(input);
 	private static final List<GenLayer> genLayers = new ArrayList<>();
+	private static final HashMap<Integer, Integer> randCol = new HashMap<>();
 
 	public static void main(String[] args) {
 		final int x = -432;
 		final int y = -432;
 		final int width = 864;
 		final int height = 864;
-		final int biomeScale = 4;
-		addGenLayer(g -> new GenLayerIsland(1L));
-		addGenLayer(g -> new GenLayerFuzzyZoom(2000L, g));
-		addGenLayer(g -> new GenLayerAddIsland(1L, g));
-		addGenLayer(g -> new GenLayerZoom(2001L, g));
-		addGenLayer(g -> new GenLayerAddIsland(2L, g));
-		addGenLayer(g -> new GenLayerAddSnow(2L, g));
-		addGenLayer(g -> new GenLayerZoom(2002L, g));
-		addGenLayer(g -> new GenLayerAddIsland(3L, g));
-		addGenLayer(g -> new GenLayerZoom(2003L, g));
-		addGenLayer(g -> new GenLayerAddIsland(4L, g));
-		addGenLayer(g -> new GenLayerAddMushroomIsland(5L, g));
-
-		GenLayer river = new GenLayerRiverInit(100L, getLastGenLayer());
-		river = GenLayerZoom.func_35515_a(1000L, river, biomeScale + 2);
-		river = new GenLayerRiver(1L, river);
-		river = new GenLayerSmooth(1000L, river);
-
-		addGenLayer(g -> new GenLayerBiome(200L, g, WorldType.DEFAULT));
-		addGenLayer(g -> new GenLayerHills(1000L, g));
-		addGenLayer(g -> new GenLayerZoom(1000L, g));
-		addGenLayer(g -> new GenLayerZoom(1001L, g));
-
-		for (int i = 0; i < biomeScale; i++) {
-			final long li = i;
-			addGenLayer(g -> new GenLayerZoom(1000L + li, g));
-			if (i == 0) {
-				addGenLayer(g -> new GenLayerAddIsland(3L, g));
-			}
-			if (i == 1) {
-				addGenLayer(g -> new GenLayerShore(1000L, g));
-				addGenLayer(g -> new GenLayerSwampRivers(1000L, g));
-			}
-		}
-
-		final GenLayer finalRiver = river;
-		addGenLayer(g -> new GenLayerSmooth(1000L, g));
-		addGenLayer(g -> new GenLayerRiverMix(100L, g, finalRiver));
-		addGenLayer(g -> new GenLayerVoronoiZoom(10L, g));
+		addGenLayers(GenLayer.func_48425_a(seed, WorldType.DEFAULT)[0]);
 
 		initWorldGenSeed();
 		if (format.isSequenced()) {
@@ -128,11 +92,35 @@ public class GenLayerPreviewer {
 		return genLayer;
 	}
 
+	private static void addGenLayers(GenLayer genLayer) {
+		while (genLayer != null) {
+			genLayers.add(0, genLayer);
+			genLayer = genLayer.parent;
+		}
+	}
+
 	private static void initWorldGenSeed() {
 		GenLayer genLayer = getLastGenLayer();
 		if (genLayer != null) {
 			genLayer.initWorldGenSeed(seed);
 		}
+	}
+
+	private static int getBiomeColor(int i) {
+		if (i >= 0 && i < 256 && BiomeGenBase.biomeList[i] != null) {
+			BiomeGenBase biome = BiomeGenBase.biomeList[i];
+			if (biome.color == 0) {
+				biome.color = random.nextInt(0xFFFFFF);
+			}
+
+			return biome.color;
+		}
+
+		if (!randCol.containsKey(i)) {
+			randCol.put(i, random.nextInt(0xFFFFFF));
+		}
+
+		return randCol.get(i);
 	}
 
 	private static void printMarkdown(int[] array, int width, int height) {
@@ -192,6 +180,23 @@ public class GenLayerPreviewer {
 	}
 
 	private static void printHeatmap(int[] array, int width, int height) {
+		BufferedImage img = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+
+		int[] color = new int[3];
+		for (int x = 0; x < width; x++) {
+			for (int z = 0; z < height; z++) {
+				for (int i = 0; i < color.length; i++) {
+					color[i] = lerpi(255, (int)(heatmapColor[i] * 255.0F), Math.min(Math.max(array[x + z * height] / 65536.0F, 0.0F), 1.0F));
+				}
+
+				img.setRGB(x, z, color[0] << 16 | color[1] << 8 | color[2]);
+			}
+		}
+
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(new ImageTransferable(img), null);
+	}
+
+	private static void printAnnotatedHeatmap(int[] array, int width, int height) {
 		final int scale = 48;
 		BufferedImage img = new BufferedImage(width * scale, height * scale, BufferedImage.TYPE_INT_RGB);
 		Graphics2D gfx = img.createGraphics();
@@ -231,14 +236,8 @@ public class GenLayerPreviewer {
 
 		for (int x = 0; x < width; x++) {
 			for (int z = 0; z < height; z++) {
-				int color = 0;
 				int i = array[x + z * width];
-				if (i >= 0 && i < BiomeGenBase.biomeList.length) {
-					BiomeGenBase biome = BiomeGenBase.biomeList[i];
-					if (biome != null) {
-						color = biome.color;
-					}
-				}
+				int color = getBiomeColor(i);
 
 				img.setRGB(x, z, color);
 			}
@@ -267,14 +266,8 @@ public class GenLayerPreviewer {
 
 			for (int xx = 0; xx < width; xx++) {
 				for (int zz = 0; zz < height; zz++) {
-					int color = 0;
 					int i = array[xx + zz * width];
-					if (i >= 0 && i < BiomeGenBase.biomeList.length) {
-						BiomeGenBase biome = BiomeGenBase.biomeList[i];
-						if (biome != null) {
-							color = biome.color;
-						}
-					}
+					int color = getBiomeColor(i);
 
 					img.setRGB(xx, zz, color);
 				}
@@ -364,6 +357,10 @@ public class GenLayerPreviewer {
 		}
 	}
 
+	private static int lerpi(int a, int b, float t) {
+		return (int)(a + (b - a) * t);
+	}
+
 	private static float lerp(float a, float b, float t) {
 		return a + (b - a) * t;
 	}
@@ -373,6 +370,7 @@ public class GenLayerPreviewer {
 		WIKI,
 		ARRAY,
 		HEATMAP,
+		HEATMAP_ANNOTATED,
 		IMAGE,
 		IMAGE_SEQUENCE;
 
@@ -381,6 +379,7 @@ public class GenLayerPreviewer {
 			WIKI.setFunction(GenLayerPreviewer::printWiki);
 			ARRAY.setFunction(GenLayerPreviewer::printArray);
 			HEATMAP.setFunction(GenLayerPreviewer::printHeatmap);
+			HEATMAP_ANNOTATED.setFunction(GenLayerPreviewer::printAnnotatedHeatmap);
 			IMAGE.setFunction(GenLayerPreviewer::printImage);
 			IMAGE_SEQUENCE.setSequencedFunction(GenLayerPreviewer::printImageSequence);
 		}
