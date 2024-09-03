@@ -196,9 +196,9 @@ All entities extending the `Entity` class must support this bit field at metadat
 | 2 | 0x04 | Riding? |
 
 ## Relevant Classes
-- `DataWatcher.java`
+- `DataWatcher` (MCP) / `SynchedEntityData` (Mojang)
     - Watches metadata values for changes and sends packets.
-- `WatchableObject.java`
+- `WatchableObject` (MCP) / `SynchedEntityData.DataItem` (Mojang)
     - Represents a metadata value that can be changed.
-- `Packet40EntityMetadata.java`
+- `Packet40EntityMetadata` (MCP) / `SetEntityDataPacket` (Mojang)
     - The packet that notifies the client of metadata changes in a mob.
