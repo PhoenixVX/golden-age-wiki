@@ -1,5 +1,5 @@
 > [!NOTE]
-> Before you follow this guide, make sure you have decent knowledge of Java and have already [decompiled Minecraft](setting_up.md). If you are using RetroMCP-Java, you may want to enable "keep resources" in order to get the `gui/items.png` texture used for this tutorial.
+> Before you follow this guide, make sure you have a decent knowledge of Java and have already [decompiled Minecraft](setting_up.md). If you are using RetroMCP-Java, you may want to enable "keep resources" in order to get the `gui/items.png` texture used for this tutorial.
 
 # Creating a Custom Item
 
